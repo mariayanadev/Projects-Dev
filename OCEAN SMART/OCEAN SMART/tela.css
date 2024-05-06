@@ -1,0 +1,213 @@
+.nowrap {
+  display: flex;
+  background-color: #1e90ff;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  display: flex;
+  padding: 0px;
+  height: 135px;
+  justify-content: center; /* Alteração: Espaço entre os itens */
+}
+
+img {
+  margin-bottom: 15px;
+  padding: 0px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  width: 500px;
+  margin-right: 15px;
+  background-color: white;
+}
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-right: 10px;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+.fas {
+  font-size: 32px; /* Altere o tamanho conforme necessário */
+  padding: 5px;
+}
+
+.fa-bars {
+  font-size: 28px;
+  padding: 5px;
+}
+
+.dropbtn i {
+  font-size: 20px; /* Reduz o tamanho do ícone para corresponder ao tamanho dos outros ícones */
+  margin-right: 3px;
+  line-height: 0.3; /* Ajuste este valor conforme necessário para alinhar verticalmente com o texto */
+}
+
+.input-group-text:not(:first-child) {
+  margin-left: 10px; /* Adicione espaço entre os ícones */
+}
+
+.ml-4 {
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5fffa;
+}
+
+.dropdowns-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #483d8b;
+  overflow: visible;
+  justify-content: center; /* Alteração: Alinhando itens horizontalmente */
+  display: flex; /*Isso ajudou a centralizar os itens dropdowns*/
+}
+
+.dropdowns-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+li {
+  float: center;
+  justify-content: center;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+  justify-content: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #df4271;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilo para mostrar a lista de opções */
+.show {
+  display: block;
+}
+
+/* Esconder a lista de opções por padrão */
+
+.user-options.show {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+  width: max-content;
+  z-index: 999;
+}
